@@ -67,7 +67,7 @@
 	}
 
 	function addLegend(domain, color) {
-		
+
 		d3.select("#legend").select("svg").remove();
 		var N = 4;
 		var step = Math.round((domain[1] - domain[0]) / N);
@@ -160,7 +160,7 @@
 		dataset = relationship.map(function (d) {
 			//			console.log(d)
 			var i;
-			
+
 			for (i = 0; i < sector.length; i++) {
 				if (sector[i].Activity === d.Activity) {
 					sectorKays.map(function (k) {
@@ -235,10 +235,10 @@
 		});
 		var _3w_attrib = 'Created by <a href="http://www.geogecko.com">Geo Gecko</a> and © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, Powered by <a href="https://d3js.org/">d3</a>';
 		var basemap = L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_nolabels/{z}/{x}/{y}{r}.png', {
-	attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
-	subdomains: 'abcd',
-	maxZoom: 19
-});
+			attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
+			subdomains: 'abcd',
+			maxZoom: 19
+		});
 
 		basemap.addTo(map);
 		var sidebar = L.control.sidebar('sidebar', {
@@ -335,7 +335,7 @@
 		}).slice(1,6);
 		updateTable(top5Values);
 
-		
+
 		var countries = [];
 		var countriesOverlay = L.d3SvgOverlay(function (sel, proj) {
 			var projection = proj.pathFromGeojson.projection;
@@ -536,17 +536,17 @@
 			})
 				.style("fill", function (d) {
 				if(d.properties._agencyList){
-				return d.properties._agencyList.length ? color(d.properties._agencyList.length) : "#00000000"; //#3CB371
-					}
+					return d.properties._agencyList.length ? color(d.properties._agencyList.length) : "#00000000"; //#3CB371
+				}
 				return "#00000000";
 			});
 			addLegend(domain, color);
-			
+
 			var top5Values = datasetNest.sort(function(a,b){
-			return b.values.length - a.values.length
-		}).slice(1,6);
-		updateTable(top5Values);
-			
+				return b.values.length - a.values.length
+			}).slice(1,6);
+			updateTable(top5Values);
+
 			var beneficiaries = d3.sum(relationship, function(d){return parseFloat(d.Beneficiaries)});
 
 			global.beneficiaryCount = beneficiaries;
@@ -688,18 +688,24 @@
 				.style("fill", function (d) {
 				return d.properties._numberOfAgencies ? color(d.properties._numberOfAgencies) : "#00000000"; //#3CB371
 			});
-			
+
 			addLegend(domain, color);
-			
-		var selectedDatasetNest = d3.nest()
-		.key(function(d){ if(d.key !== ""){ 
-			return d["Agency name"]; 
-		}}).entries(selectedDataset);
-						
+
+			var selectedDatasetNest = d3.nest()
+			.key(function(d){ if(d.key !== ""){ 
+				return d["Agency name"]; 
+			}}).entries(selectedDataset);
+
 			var top5Values = selectedDatasetNest.sort(function(a,b){
-			return b.values.length - a.values.length
-		}).slice(0,5);
-		updateTable(top5Values);
+				return b.values.length - a.values.length
+			}).slice(0,5);
+			updateTable(top5Values);
+
+			beneficiaries = d3.sum(selectedDataset, function(d){console.log(d); return parseFloat(d.Beneficiaries)});
+
+			console.log(beneficiaries);
+
+			d3.select("#beneficiary-count").text(beneficiaries);
 
 			var unExtract = selectedDataset.filter(function (d) {
 				if (d.Actor_Type === "UN") {
@@ -826,6 +832,7 @@
 			}
 
 
+
 		}
 
 
@@ -852,7 +859,7 @@
 					d3.select(this).classed("d3-active", !needRemove).style("background", needRemove ? "transparent" : "#1fabe1");
 					global.currentEvent = "district";
 					myFilter(c, global.currentEvent, needRemove);
-					
+
 					global.selectedDistrict.map(function (a) {
 						//console.log(a);
 						d3.selectAll(".district-" + a.key.toLowerCase().replaceAll('[ ]', "-")).style("opacity", 1);
@@ -976,27 +983,24 @@
 				});
 				_actorTypeList.exit().remove();
 			}
-		
+
 			d3.select("#agency-list").selectAll("p").select("i").remove();
-			
-		d3.select("#agency-list").selectAll("p").append("i")
+
+			d3.select("#agency-list").selectAll("p").append("i")
 				.html("<i class=\"glyphicon glyphicon-info-sign\"></i>").on("click", function(d){
-			d3.select("#agency-name").select("span")
-			.remove();
-			d3.select("#agency-description").select("span")
-			.remove();
-			
-			var newName = d.key;
-			var newDescription = d.values[0]["Detailed Activity description"];
-			
-			console.log(newName);
-			console.log(newDescription);
-      		
-			d3.select("#agency-name").append("span").text(newName);
-			d3.select("#agency-description").append("span").text(newDescription);
-			
-			
-});
+				d3.select("#agency-name").select("span")
+					.remove();
+				d3.select("#agency-description").select("span")
+					.remove();
+
+				var newName = d.key;
+				var newDescription = d.values[0]["Detailed Activity description"];
+
+				d3.select("#agency-name").append("span").text(newName);
+				d3.select("#agency-description").append("span").text(newDescription);
+
+
+			});
 
 		}
 
@@ -1011,18 +1015,18 @@
 					.attr("height", height);
 			}
 		});
-		
+
 		d3.select("#agency-name").select("span")
-		.transition()
-		.duration(50)
-		.text("Kampala Capital City Authority");
-		
+			.transition()
+			.duration(50)
+			.text("Kampala Capital City Authority");
+
 		d3.select("#agency-description").select("span")
-		.transition()
-		.duration(50)
-		.text("Mission: To Deliver Quality Services to the City");
-		
-		
+			.transition()
+			.duration(50)
+			.text("Mission: To Deliver Quality Services to the City");
+
+
 
 	} // ready
 

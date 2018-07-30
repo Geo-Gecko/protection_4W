@@ -248,7 +248,7 @@ p.custom-list-header .glyphicon {
 }
 
 .custom-list p:hover {
-    background: rgba(227, 120, 74, 0.12) !important;
+    background: rgba(31, 171, 225, 0.12) !important;
     color: #000 !important;
 }
 
@@ -472,4 +472,12 @@ body {
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
     background-color: #555;
+}
+
+body {
+    opacity: 0;
+}
+ 
+body.all-loaded {
+	opacity: 1;
 }

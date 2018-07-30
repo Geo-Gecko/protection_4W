@@ -152,9 +152,10 @@ crossorigin=""></script>
 	</head>
 
 	<body>
-		<a href="https://www.kcca.go.ug/"><img style="z-index: 10000; position: fixed; bottom: 2%; right: 0; border: 0; width: 4em;" src="data/kcca_logo.svg" alt="KCCA">
-			<a href="https://www.kcca.go.ug/"><img style="z-index: 10000; position: fixed; bottom: 2%; right: 1em; border: 0; width: 8em;" src="data/unicef_for-every-child_EN.png" alt="KCCA"></a>
+		<a href="https://www.kcca.go.ug/"><img style="z-index: 10000; position: fixed; bottom: 2%; right: 1vh; border: 0; width: 6em;" src="data/kcca_logo.svg" alt="KCCA">
+			<a href="https://www.unicef.org/uganda/"><img style="z-index: 10000; position: fixed; bottom: 2%; right: 3vh; border: 0; width: 10em;" src="data/unicef_for-every-child_EN.png" alt="UNICEF"></a>
 		</a>
+		<a href="https://www.geogecko.com/"><img style="z-index: 10000; position: fixed; bottom: 2%; left: 28vh; border: 0; width: 10em;" src="data/logo-full-no-text.svg" alt="GeoGecko"></a>
 		<div id="sidebar" style="overflow-x: hidden">
 			<div class="top-panel col-md-8 col-sm-8">
 
@@ -259,17 +260,18 @@ crossorigin=""></script>
 			</div>
 		</div>
 
-
-
-
-
+		<script src="./js/jquery.min.js"></script>
 		<script src="./js/d3.v3.min.js"></script>
 		<script src="./js/L.D3SvgOverlay.min.js"></script>
-		<script src="./js/jquery.min.js"></script>
 		<script src="./js/topojson.v1.min.js"></script>
 		<script src="./js/queue.v1.min.js"></script>
 		<script src="./js/nouislider.js"></script>
 		<script src="./js/uganda.map.js"></script>
+		<script>
+			setTimeout(function () {
+				$("body").addClass('all-loaded');
+			}, 500);
+		</script>
 
 	</body>
 </html>
