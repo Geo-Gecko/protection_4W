@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>4W Map - KCCA - UNICEF</title>
+		<link href="./css/bootstrap.min.css" rel="Stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+		<!--
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
+integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
+crossorigin=""/>
+-->
+		<link href="./css/nouislider.css" rel="Stylesheet" type="text/css">
+		<link href="./css/uganda.map.css" rel="Stylesheet" type="text/css">
+		<link rel="stylesheet" href="./css/leaflet.css">
+		<link rel="stylesheet" href="./css/L.css">
+		<!--
+<script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
+integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
+crossorigin=""></script>
+<script src="https://unpkg.com/leaflet-image@latest/leaflet-image.js"></script>
+-->
+		<script src="js/leaflet.js"></script>
+		<script src="./js/L.js"></script>
+		<!--		<script src="./js/makeTable.js"></script>-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!--[if !IE]><!-->
+		<style>
+			* { 
+				margin: 0; 
+				padding: 0; 
+			}
+			body { 
+				font: 14px/1.4 Georgia, Serif;
+				background-color: grey;
+			}
+			#page-wrap {
+				margin: 50px;
+			}
+			p {
+				margin: 20px 0; 
+			}
+
+			/* 
+			Generic Styling, for Desktops/Laptops 
+			*/
+			table { 
+				width: 100%; 
+				border-collapse: collapse; 
+			}
+			/* Zebra striping */
+			tr:nth-of-type(odd) { 
+				background: #eee; 
+			}
+			th { 
+				background: #333; 
+				color: white; 
+				font-weight: bold; 
+				cursor: s-resize;
+				background-repeat: no-repeat;
+				background-position: 3% center;
+			}
+			td, th { 
+				padding: 6px; 
+				border: 1px solid #ccc; 
+				text-align: left; 
+			}
+
+			th.des:after {
+				content: "\21E9";
+			}
+
+			th.aes:after {
+				content: "\21E7";
+			}
+
+			/* 
+			Max width before this PARTICULAR table gets nasty
+			This query will take effect for any screen smaller than 760px
+			and also iPads specifically.
+			*/
+			@media 
+				only screen and (max-width: 760px),
+				(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+					/* Force table to not be like tables anymore */
+					table, thead, tbody, th, td, tr { 
+						display: block; 
+					}
+
+					/* Hide table headers (but not display: none;, for accessibility) */
+					thead tr { 
+						position: absolute;
+						top: -9999px;
+						left: -9999px;
+					}
+
+					tr { border: 1px solid #ccc; }
+
+					td { 
+						/* Behave  like a "row" */
+						border: none;
+						border-bottom: 1px solid #eee; 
+						position: relative;
+						padding-left: 50%; 
+					}
+
+					td:before { 
+						/* Now like a table header */
+						position: absolute;
+						/* Top/left values mimic padding */
+						top: 6px;
+						left: 6px;
+						width: 45%; 
+						padding-right: 10px; 
+						white-space: nowrap;
+					}
+
+					/*
+					Label the data
+					*/
+					td:before {
+						content: attr(data-th) ": ";
+						font-weight: bold;
+						width: 6.5em;
+						display: inline-block;
+					}
+			}
+
+			/* Smartphones (portrait and landscape) ----------- */
+			@media only screen
+				and (min-device-width : 320px)
+				and (max-device-width : 480px) {
+					body { 
+						padding: 0; 
+						margin: 0; 
+						width: 320px; }
+			}
+
+			/* iPads (portrait and landscape) ----------- */
+			@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+				body { 
+					width: 495px; 
+				}
+			}
+
+		</style>
+
+	</head>
+
+	<body>
+		<a href="https://www.kcca.go.ug/"><img style="z-index: 10000; position: fixed; bottom: 2%; right: 0; border: 0; width: 4em;" src="data/kcca_logo.svg" alt="KCCA">
+			<a href="https://www.kcca.go.ug/"><img style="z-index: 10000; position: fixed; bottom: 2%; right: 1em; border: 0; width: 8em;" src="data/unicef_for-every-child_EN.png" alt="KCCA"></a>
+		</a>
+		<div id="sidebar" style="overflow-x: hidden">
+			<div class="top-panel col-md-8 col-sm-8">
+
+
+				<div class="head col-md-2 col-sm-2">
+					<p class="custom-count-header" style="height:63.2px; font-size: 16px;"><br>Agencies </p>
+					<p id="agency-count" class="custom-count">0</p>
+				</div>
+				<div class=" head col-md-2 col-sm-2">
+					<p class="custom-count-header" style="height:63.2px; font-size: 16px; overflow-y: auto;"><br>Sectors </p>
+					<p id="sector-count" class="custom-count">0</p>
+				</div>
+				<div class="head col-md-2 col-sm-2">
+					<p class="custom-count-header" style="height:63.2px;  font-size: 16px;ithub"><br>Parishes </p>
+					<p id="district-count" class="custom-count">0</p>
+				</div>
+				<div class="head col-md-2 col-sm-2">
+					<p class="custom-count-header" style="height:63.2px;  font-size: 16px;ithub"><br>Beneficiaries </p>
+					<p id="beneficiary-count" class="custom-count">0</p>
+				</div>
+
+
+			</div><br><br><br><br>			
+			<div id="page-wrap">
+
+				<p>Click the table header to sort data according to that column</p>
+
+			</div>
+			<div class="col-md-12">
+				<!--Creates the popup body-->
+				<div class="popup-overlay">
+					<!--Creates the popup content-->
+					<div class="popup-content">
+						<h2>Agency Information</h2>
+						<p>Click the info button <i class="glyphicon glyphicon-info-sign"></i> to get a description of that agency.</p>
+						<!--popup's close button-->
+						<p id="agency-name">Agency Name: <span> </span></p><br>    
+						<p id="agency-description">Description: <span> </span></p>    
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main-container">
+
+			<div class="top-panel col-md-8 col-sm-8" style="top: 10px; left: 250px;">
+				<div class="head" style="width: 200px; height: 90px;">
+					<p id="d3-map-info">To Filter: Use Left Menu <br/>
+						For Info: Click Map Feature </p>
+				</div>
+			</div>
+		</div>
+		<div class="row" style="margin:0px;">
+			<!--<div class="bottom-panel col-md-12" style="padding: 0 5px;">  <span class="glyphicon glyphicon-menu-down"></span>-->
+			<div class="left-panel col-md-2">
+
+				<div class="menu-panel">
+					<div class="counter-panel">
+						<div class="row" style="margin:0px;">
+							<div class="title-panel col-md-12">
+								<div id="header-text">
+									<p><span>Who does,</span><br>
+										<span>What,</span><br>
+										<span>Where (3W)</span></p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="list-container">
+						<div class="col-md-12">
+							<p class="custom-list-header">Partners <i class="glyphicon glyphicon-chevron-down"></i></p>
+							<div id="agency-list" class="custom-list"></div>
+						</div>
+						<div class="col-md-12">
+							<p class="custom-list-header">Sectors <i class="glyphicon glyphicon-chevron-down"></i></p>
+							<div id="sector-list" class="custom-list"></div>
+						</div>
+						<div class="col-md-12">
+							<p class="custom-list-header">Parishes<i class="glyphicon glyphicon-chevron-down"></i></p>
+							<div id="district-list" class="custom-list"></div>
+						</div>
+						<div class="col-md-12">
+							<p class="custom-list-header">Donors<i class="glyphicon glyphicon-chevron-down"></i></p>
+							<div id="donor-list" class="custom-list"></div>
+						</div>
+						<div class="col-md-12">
+							<p class="custom-list-header">Actor Type<i class="glyphicon glyphicon-chevron-down"></i></p>
+							<div id="actor-type-list" class="custom-list"></div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="right-panel col-md-12 col-sm-12">
+			<div id="d3-map-container">
+				<div style="background:#f5f5f5; position:absolute; top:0px; width:100%;">
+					<p id="d3-map-refresh">Reset Filters</p>
+					<div id="legend"></div>
+				</div>
+				<div id="d3-map-wrapper"></div>
+			</div>
+		</div>
+
+
+
+
+
+		<script src="./js/d3.v3.min.js"></script>
+		<script src="./js/L.D3SvgOverlay.min.js"></script>
+		<script src="./js/jquery.min.js"></script>
+		<script src="./js/topojson.v1.min.js"></script>
+		<script src="./js/queue.v1.min.js"></script>
+		<script src="./js/nouislider.js"></script>
+		<script src="./js/uganda.map.js"></script>
+
+	</body>
+</html>

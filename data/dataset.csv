@@ -1,0 +1,488 @@
+Actor ID ,Agency name,Abbreviation,Actor type,Address,Donor,Sector,Program,Refugee Programming,Beneficiaries,Detailed Activity description,Division,Parish,Start (year),Start (month),End (year),End (month)
+1,Action Against Hunger,ACF,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Uganda National Association of Community Occupational Health (UNACOH),WASH,BTVET,For Refugees only,3998,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,LUBYA,2003,May ,2016,July 
+2,Uganda National NGO Forum,ARC,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Uganda National Association of Community Occupational Health (UNACOH),Health ,Community Health,For Refugees only,2162,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,NAKAWA,2016,March,2018,April
+3,Uganda National NGO Forum,DCA,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Uganda National Association of Community Occupational Health (UNACOH),Education,Disease Control,For Refugee Host community,3034,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,LUNGUJJA,2016,March,2018,April
+4,Action Group for Health Human Rights & HIV/AIDS (AGHA Uganda),MoH,Government ,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Uganda National Association of Community Occupational Health (UNACOH),Health ,Guidance and Counselling,For Refugees only,1667,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,KISUGU,2016,March,2021,May
+5,Action Group for Health Human Rights & HIV/AIDS (AGHA Uganda),UNHCR ,UN,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Uganda National Association of Community Occupational Health (UNACOH),Protection ,BTVET,For both Refugees and Host community,4243,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,MBUYA I,2016,March,2021,May
+6,Global Health Uganda,ACF,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Uganda National Association of Community Occupational Health (UNACOH),WASH,Community Health,For Refugees only,1548,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,MUTUNDWE,2003,May ,2016,July 
+7,Uganda National NGO Forum,ARC,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Uganda National Association of Community Occupational Health (UNACOH),Health ,Disease Control,For Refugees only,306,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,KISUGU,2016,March,2018,April
+8,Action Group for Health Human Rights & HIV/AIDS (AGHA Uganda),DCA,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Uganda National Association of Community Occupational Health (UNACOH),Education,Guidance and Counselling,For Refugee Host community,122,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,MULAGO II,2016,March,2018,April
+9,Transcultural Psychosocial Organisation,MoH,Government ,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Uganda National Association of Community Occupational Health (UNACOH),Health ,HIV/AIDS,For Refugees only,3510,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,KIBULI,2016,March,2021,May
+10,Community Health Alliance Uganda,UNHCR ,UN,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Uganda National Association of Community Occupational Health (UNACOH),Protection ,Immunization,For both Refugees and Host community,4877,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,KAMWOKYA I,2016,March,2021,May
+11,PATH,ACF,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Uganda National Association of Community Occupational Health (UNACOH),WASH,Maternal and Child Health,For Refugees only,4638,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,MULAGO II,2003,May ,2016,July 
+12,UWASNET,ARC,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Uganda National Association of Community Occupational Health (UNACOH),Health ,Mental Health,For Refugees only,2198,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,KIBULI,2016,March,2018,April
+13,Reproductive Health Uganda,DCA,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Uganda National Association of Community Occupational Health (UNACOH),Education,Palliative Care,For Refugee Host community,3894,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,KAMWOKYA I,2016,March,2018,April
+14,IPA Uganda,MoH,Government ,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Love Volunteers,Health ,Special Needs and Inclusive Education,For Refugees only,720,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,KOLOLO I,2016,March,2021,May
+15,Sign Health Uganda,UNHCR ,UN,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Love Volunteers,Protection ,Community Health,For both Refugees and Host community,4767,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,MBUYA I,2016,March,2021,May
+16,Uganda Reproductive Health Bureau (URHB),ACF,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Love Volunteers,WASH,Disease Control,For Refugees only,50,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,LUBAGA,2003,May ,2016,July 
+17,Uganda National Association of Community Occupational Health (UNACOH),ARC,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Love Volunteers,Health ,Guidance and Counselling,For Refugees only,388,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,MULAGO III,2016,March,2018,April
+18,HelpAge Uganda,DCA,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Love Volunteers,Education,HIV/AIDS,For Refugee Host community,224,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,BUTABIKA,2016,March,2018,April
+19,Forum for Education NGO's in Uganda(FENU),MoH,Government ,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Love Volunteers,Health ,Immunization,For Refugees only,289,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,NAJJANANKUMBI II,2016,March,2021,May
+20,Women's International Cross Cultural Exchange (ISIS - WICCE),UNHCR ,UN,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Love Volunteers,Protection ,Maternal and Child Health,For both Refugees and Host community,542,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,NAKASERO III,2016,March,2021,May
+21,Action Aid International Uganda,ACF,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Love Volunteers,WASH,Mental Health,For Refugees only,2055,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,MENGO,2003,May ,2016,July 
+22,The African Network for Prevention Against Child Abuse and Neglect Uganda,ARC,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Love Volunteers,Health ,Palliative Care,For Refugees only,1748,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,NAGURU I,2016,March,2018,April
+23,Defenders Protection Initiative,DCA,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Love Volunteers,Education,Special Needs and Inclusive Education,For Refugee Host community,3660,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,KYANJA,2016,March,2018,April
+24,National Association of Women Organisations in Uganda(NAWOU),MoH,Government ,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Love Volunteers,Health ,Guidance and Counselling,For Refugees only,4907,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,UPK,2016,March,2021,May
+25,Foundation for Human Rights Initiative,UNHCR ,UN,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Love Volunteers,Protection ,HIV/AIDS,For both Refugees and Host community,2847,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,KAWEMPE I,2016,March,2021,May
+26,WaterAid Uganda,ACF,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Love Volunteers,WASH,BTVET,For Refugees only,2479,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,KYEBANDO,2003,May ,2016,July 
+27,Econ Children's Village,ARC,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Love Volunteers,Health ,Community Health,For Refugees only,2402,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,KOLOLO III,2016,March,2018,April
+28,Africa Sustainable Tourism Care Foundation (ASTCF),DCA,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Love Volunteers,Education,Disease Control,For Refugee Host community,662,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,WANDEGEYA,2016,March,2018,April
+29,ACO Africa,MoH,Government ,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Love Volunteers,Health ,Guidance and Counselling,For Refugees only,828,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,WABIGALO,2016,March,2021,May
+30,Love Volunteers,UNHCR ,UN,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Love Volunteers,Protection ,HIV/AIDS,For both Refugees and Host community,321,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,OLD KAMPALA,2016,March,2021,May
+31,Village Hope International,ACF,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Love Volunteers,WASH,Immunization,For Refugees only,1644,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,MAKINDYE II,2003,May ,2016,July 
+32,MACERUDET Uganda Volunteers,ARC,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Love Volunteers,Health ,Maternal and Child Health,For Refugees only,2264,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,KYAMBOGO,2016,March,2018,April
+33,Kibuku Community Centre,DCA,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Love Volunteers,Education,Mental Health,For Refugee Host community,3724,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,KOMAMBOGA,2016,March,2018,April
+34,Kitega Community Centre,MoH,Government ,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Love Volunteers,Health ,Palliative Care,For Refugees only,2043,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,NSAMBYA POLICE BARRACKS,2016,March,2021,May
+35,Wal-Mark Africa Safaris,UNHCR ,UN,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Love Volunteers,Protection ,Special Needs and Inclusive Education,For both Refugees and Host community,270,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,NDEEBA,2016,March,2021,May
+36,RWEYOWA,ACF,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Love Volunteers,WASH,Guidance and Counselling,For Refugees only,405,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,BUSEGA,2003,May ,2016,July 
+37,Divine Children Orphanage Home,ARC,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Love Volunteers,Health ,HIV/AIDS,For Refugees only,3678,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,MAKERERE UNIVERSITY,2016,March,2018,April
+38,Uplift A Child Africa,DCA,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Love Volunteers,Education,Immunization,For Refugee Host community,714,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,NAKASERO I,2016,March,2018,April
+39,BUVAD,MoH,Government ,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Love Volunteers,Health ,Maternal and Child Health,For Refugees only,4799,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,LUBYA,2016,March,2021,May
+40,uganda womens network(UWONET),UNHCR ,UN,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Love Volunteers,Protection ,Mental Health,For both Refugees and Host community,3609,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,BUKOTO I,2016,March,2021,May
+41,Caritas Kampala,ACF,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Love Volunteers,WASH,Palliative Care,For Refugees only,477,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,KIWATULE,2003,May ,2016,July 
+42,SNV,ARC,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Love Volunteers,Health ,Special Needs and Inclusive Education,For Refugees only,4025,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,KANYANYA,2016,March,2018,April
+43,Community intergrated development initiatives,DCA,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Love Volunteers,Education,BTVET,For Refugee Host community,4963,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,KOLOLO II,2016,March,2018,April
+44,somero uganda,MoH,Government ,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Love Volunteers,Health ,Community Health,For Refugees only,868,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,KAZO ANGOLA,2016,March,2021,May
+45,NUHA foundation,UNHCR ,UN,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Village Hope International,Protection ,Disease Control,For both Refugees and Host community,1224,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,NSAMBYA RAILWAY,2016,March,2021,May
+46,Girl Child Network Uganda,ACF,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Village Hope International,WASH,Guidance and Counselling,For Refugees only,96,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,INDUSTRIAL AREA,2003,May ,2016,July 
+47,HEPS-Uganda,ARC,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Village Hope International,Health ,HIV/AIDS,For Refugees only,1384,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,NAKASERO II,2016,March,2018,April
+48,Water For People,DCA,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Village Hope International,Education,Immunization,For Refugee Host community,4819,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,KISENYI III,2016,March,2018,April
+49,Action Against Hunger,ACF,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Village Hope International,WASH,Maternal and Child Health,For Refugees only,1469,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,BUKOTO II,2003,May ,2016,July 
+50,Uganda National NGO Forum,ARC,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Village Hope International,Health ,Mental Health,For Refugees only,2523,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,KISWA,2016,March,2018,April
+51,Uganda National NGO Forum,DCA,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Village Hope International,Education,Palliative Care,For Refugee Host community,678,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,KIBUYE II,2016,March,2018,April
+52,Action Group for Health Human Rights & HIV/AIDS (AGHA Uganda),MoH,Government ,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Village Hope International,Health ,Special Needs and Inclusive Education,For Refugees only,512,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,NTINDA,2016,March,2021,May
+53,Action Group for Health Human Rights & HIV/AIDS (AGHA Uganda),UNHCR ,UN,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Village Hope International,Protection ,BTVET,For both Refugees and Host community,4335,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,KAGUGUBE,2016,March,2021,May
+54,Global Health Uganda,ACF,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Village Hope International,WASH,Community Health,For Refugees only,3118,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,KATWE II,2003,May ,2016,July 
+55,Uganda National NGO Forum,ARC,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Village Hope International,Health ,Disease Control,For Refugees only,3522,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,LUZIRA,2016,March,2018,April
+56,Action Group for Health Human Rights & HIV/AIDS (AGHA Uganda),DCA,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Village Hope International,Education,Guidance and Counselling,For Refugee Host community,3500,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,KABALAGALA,2016,March,2018,April
+57,Transcultural Psychosocial Organisation,MoH,Government ,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Village Hope International,Health ,BTVET,For Refugees only,1209,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,KAWEMPE II,2016,March,2021,May
+58,Community Health Alliance Uganda,UNHCR ,UN,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Village Hope International,Protection ,Community Health,For both Refugees and Host community,1827,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,NAKIVUBO SHAURIYAAKO,2016,March,2021,May
+59,PATH,ACF,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Village Hope International,WASH,Disease Control,For Refugees only,1325,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,KANSANGA,2003,May ,2016,July 
+60,UWASNET,ARC,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Village Hope International,Health ,Guidance and Counselling,For Refugees only,2407,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,BANDA,2016,March,2018,April
+61,Reproductive Health Uganda,DCA,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Village Hope International,Education,HIV/AIDS,For Refugee Host community,1388,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,BUGOLOBI,2016,March,2018,April
+62,IPA Uganda,MoH,Government ,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Village Hope International,Health ,Immunization,For Refugees only,2635,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,NSAMBYA ESTATE,2016,March,2021,May
+63,Sign Health Uganda,UNHCR ,UN,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Village Hope International,Protection ,Maternal and Child Health,For both Refugees and Host community,2053,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,SALAAMA,2016,March,2021,May
+64,Uganda Reproductive Health Bureau (URHB),ACF,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Village Hope International,WASH,Mental Health,For Refugees only,4857,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,KATWE I,2003,May ,2016,July 
+65,Uganda National Association of Community Occupational Health (UNACOH),ARC,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Village Hope International,Health ,Palliative Care,For Refugees only,4129,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,KAMWOKYA II,2016,March,2018,April
+66,HelpAge Uganda,DCA,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Village Hope International,Education,BTVET,For Refugee Host community,2822,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,LUWAFU,2016,March,2018,April
+67,Forum for Education NGO's in Uganda(FENU),MoH,Government ,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Village Hope International,Health ,Community Health,For Refugees only,1978,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,NSAMBYA CENTRAL,2016,March,2021,May
+68,Women's International Cross Cultural Exchange (ISIS - WICCE),UNHCR ,UN,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Village Hope International,Protection ,Disease Control,For both Refugees and Host community,3923,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,ITEK,2016,March,2021,May
+69,Action Aid International Uganda,ACF,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Village Hope International,WASH,Guidance and Counselling,For Refugees only,1717,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,MUTUNGO,2003,May ,2016,July 
+70,The African Network for Prevention Against Child Abuse and Neglect Uganda,ARC,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Kibuku Community Centre,Health ,HIV/AIDS,For Refugees only,4972,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,MAKINDYE I,2016,March,2018,April
+71,Defenders Protection Initiative,DCA,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Kibuku Community Centre,Education,BTVET,For Refugee Host community,1144,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,BUZIGA,2016,March,2018,April
+72,National Association of Women Organisations in Uganda(NAWOU),MoH,Government ,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Kibuku Community Centre,Health ,Community Health,For Refugees only,1628,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,BWAISE II,2016,March,2021,May
+73,Foundation for Human Rights Initiative,UNHCR ,UN,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Kibuku Community Centre,Protection ,Disease Control,For both Refugees and Host community,177,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,KIKAAYA,2016,March,2021,May
+74,WaterAid Uganda,ACF,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Kibuku Community Centre,WASH,Guidance and Counselling,For Refugees only,820,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,BWAISE III,2003,May ,2016,July 
+75,Econ Children's Village,ARC,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Kibuku Community Centre,Health ,HIV/AIDS,For Refugees only,3261,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,KABOWA,2016,March,2018,April
+76,Africa Sustainable Tourism Care Foundation (ASTCF),DCA,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Kibuku Community Centre,Education,Immunization,For Refugee Host community,628,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,BUKASA,2016,March,2018,April
+77,ACO Africa,MoH,Government ,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Kibuku Community Centre,Health ,Maternal and Child Health,For Refugees only,2983,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,BUKESA,2016,March,2021,May
+78,Love Volunteers,UNHCR ,UN,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Kibuku Community Centre,Protection ,Mental Health,For both Refugees and Host community,2579,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,KISENYI II,2016,March,2021,May
+79,Village Hope International,ACF,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Kibuku Community Centre,WASH,BTVET,For Refugees only,4255,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,NAGURU II,2003,May ,2016,July 
+80,MACERUDET Uganda Volunteers,ARC,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Kibuku Community Centre,Health ,Community Health,For Refugees only,3402,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,MBUYA I,2016,March,2018,April
+81,Kibuku Community Centre,DCA,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Kibuku Community Centre,Education,Disease Control,For Refugee Host community,2618,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,MUTUNDWE,2016,March,2018,April
+82,Kitega Community Centre,MoH,Government ,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Kibuku Community Centre,Health ,Guidance and Counselling,For Refugees only,2137,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,KISUGU,2016,March,2021,May
+83,Wal-Mark Africa Safaris,UNHCR ,UN,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Kibuku Community Centre,Protection ,HIV/AIDS,For both Refugees and Host community,3724,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,MULAGO II,2016,March,2021,May
+84,RWEYOWA,ACF,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Kibuku Community Centre,WASH,Immunization,For Refugees only,3655,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,KIBULI,2003,May ,2016,July 
+85,Divine Children Orphanage Home,ARC,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Kibuku Community Centre,Health ,Maternal and Child Health,For Refugees only,2041,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,KAMWOKYA I,2016,March,2018,April
+86,Uplift A Child Africa,DCA,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Kibuku Community Centre,Education,Mental Health,For Refugee Host community,520,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,KOLOLO I,2016,March,2018,April
+87,BUVAD,MoH,Government ,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Kibuku Community Centre,Health ,Palliative Care,For Refugees only,632,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,MBUYA I,2016,March,2021,May
+88,uganda womens network(UWONET),UNHCR ,UN,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Kibuku Community Centre,Protection ,BTVET,For both Refugees and Host community,4843,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,LUBAGA,2016,March,2021,May
+89,Caritas Kampala,ACF,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Kibuku Community Centre,WASH,Community Health,For Refugees only,2043,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,MULAGO III,2003,May ,2016,July 
+90,SNV,ARC,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Kibuku Community Centre,Health ,Disease Control,For Refugees only,1366,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,MULAGO II,2016,March,2018,April
+91,Community intergrated development initiatives,DCA,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Kibuku Community Centre,Education,Guidance and Counselling,For Refugee Host community,2286,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,KIBULI,2016,March,2018,April
+92,somero uganda,MoH,Government ,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Kibuku Community Centre,Health ,HIV/AIDS,For Refugees only,4877,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,KAMWOKYA I,2016,March,2021,May
+93,NUHA foundation,UNHCR ,UN,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Kibuku Community Centre,Protection ,Immunization,For both Refugees and Host community,1850,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,KOLOLO I,2016,March,2021,May
+94,Girl Child Network Uganda,ACF,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Kibuku Community Centre,WASH,Maternal and Child Health,For Refugees only,2639,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,MBUYA I,2003,May ,2016,July 
+95,HEPS-Uganda,ARC,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Kibuku Community Centre,Health ,Mental Health,For Refugees only,3605,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,LUBAGA,2016,March,2018,April
+96,Water For People,DCA,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Kibuku Community Centre,Education,BTVET,For Refugee Host community,1854,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,MULAGO III,2016,March,2018,April
+97,Action Against Hunger,ACF,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Kibuku Community Centre,WASH,BTVET,For Refugees only,552,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,BUTABIKA,2003,May ,2016,July 
+98,Uganda National NGO Forum,ARC,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Kibuku Community Centre,Health ,Community Health,For Refugees only,918,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,NAJJANANKUMBI II,2016,March,2018,April
+99,Uganda National NGO Forum,DCA,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Kibuku Community Centre,Education,Disease Control,For Refugee Host community,70,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,NAKASERO III,2016,March,2018,April
+100,Action Group for Health Human Rights & HIV/AIDS (AGHA Uganda),MoH,Government ,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Kibuku Community Centre,Health ,Guidance and Counselling,For Refugees only,3728,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,MENGO,2016,March,2021,May
+101,Action Group for Health Human Rights & HIV/AIDS (AGHA Uganda),UNHCR ,UN,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Kibuku Community Centre,Protection ,HIV/AIDS,For both Refugees and Host community,4136,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,NAGURU I,2016,March,2021,May
+102,Global Health Uganda,ACF,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Kibuku Community Centre,WASH,Immunization,For Refugees only,2919,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,KYANJA,2003,May ,2016,July 
+103,Uganda National NGO Forum,ARC,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Kibuku Community Centre,Health ,Maternal and Child Health,For Refugees only,3626,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,UPK,2016,March,2018,April
+104,Action Group for Health Human Rights & HIV/AIDS (AGHA Uganda),DCA,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Kibuku Community Centre,Education,Mental Health,For Refugee Host community,980,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,KAWEMPE I,2016,March,2018,April
+105,Transcultural Psychosocial Organisation,MoH,Government ,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Kibuku Community Centre,Health ,Palliative Care,For Refugees only,4544,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,KYEBANDO,2016,March,2021,May
+106,Community Health Alliance Uganda,UNHCR ,UN,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Kibuku Community Centre,Protection ,Special Needs and Inclusive Education,For both Refugees and Host community,3301,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,KOLOLO III,2016,March,2021,May
+107,PATH,ACF,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Wal-Mark Africa Safaris,WASH,Disease Control,For Refugees only,15,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,WANDEGEYA,2003,May ,2016,July 
+108,UWASNET,ARC,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Wal-Mark Africa Safaris,Health ,Guidance and Counselling,For Refugees only,1960,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,WABIGALO,2016,March,2018,April
+109,Reproductive Health Uganda,DCA,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Wal-Mark Africa Safaris,Education,HIV/AIDS,For Refugee Host community,3880,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,OLD KAMPALA,2016,March,2018,April
+110,IPA Uganda,MoH,Government ,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Wal-Mark Africa Safaris,Health ,BTVET,For Refugees only,3710,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,MAKINDYE II,2016,March,2021,May
+111,Sign Health Uganda,UNHCR ,UN,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Wal-Mark Africa Safaris,Protection ,BTVET,For both Refugees and Host community,3890,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,KYAMBOGO,2016,March,2021,May
+112,Uganda Reproductive Health Bureau (URHB),ACF,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Wal-Mark Africa Safaris,WASH,Community Health,For Refugees only,588,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,KOMAMBOGA,2003,May ,2016,July 
+113,Uganda National Association of Community Occupational Health (UNACOH),ARC,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Wal-Mark Africa Safaris,Health ,Disease Control,For Refugees only,3945,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,NSAMBYA POLICE BARRACKS,2016,March,2018,April
+114,HelpAge Uganda,DCA,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Wal-Mark Africa Safaris,Education,Guidance and Counselling,For Refugee Host community,1848,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,NDEEBA,2016,March,2018,April
+115,Forum for Education NGO's in Uganda(FENU),MoH,Government ,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Wal-Mark Africa Safaris,Health ,HIV/AIDS,For Refugees only,3560,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,BUSEGA,2016,March,2021,May
+116,Women's International Cross Cultural Exchange (ISIS - WICCE),UNHCR ,UN,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Wal-Mark Africa Safaris,Protection ,Immunization,For both Refugees and Host community,1288,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,MAKERERE UNIVERSITY,2016,March,2021,May
+117,Action Aid International Uganda,ACF,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Wal-Mark Africa Safaris,WASH,Maternal and Child Health,For Refugees only,1073,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,NAKASERO I,2003,May ,2016,July 
+118,The African Network for Prevention Against Child Abuse and Neglect Uganda,ARC,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Wal-Mark Africa Safaris,Health ,BTVET,For Refugees only,4386,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,LUBYA,2016,March,2018,April
+119,Defenders Protection Initiative,DCA,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Wal-Mark Africa Safaris,Education,Community Health,For Refugee Host community,462,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,BUKOTO I,2016,March,2018,April
+120,National Association of Women Organisations in Uganda(NAWOU),MoH,Government ,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Wal-Mark Africa Safaris,Health ,Disease Control,For Refugees only,4984,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,KIWATULE,2016,March,2021,May
+121,Foundation for Human Rights Initiative,UNHCR ,UN,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Wal-Mark Africa Safaris,Protection ,Guidance and Counselling,For both Refugees and Host community,288,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,KANYANYA,2016,March,2021,May
+122,WaterAid Uganda,ACF,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Wal-Mark Africa Safaris,WASH,HIV/AIDS,For Refugees only,4667,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,KOLOLO II,2003,May ,2016,July 
+123,Econ Children's Village,ARC,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Wal-Mark Africa Safaris,Health ,Immunization,For Refugees only,4569,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,KAZO ANGOLA,2016,March,2018,April
+124,Africa Sustainable Tourism Care Foundation (ASTCF),DCA,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Wal-Mark Africa Safaris,Education,Maternal and Child Health,For Refugee Host community,4146,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,NSAMBYA RAILWAY,2016,March,2018,April
+125,ACO Africa,MoH,Government ,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Wal-Mark Africa Safaris,Health ,BTVET,For Refugees only,2756,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,INDUSTRIAL AREA,2016,March,2021,May
+126,Love Volunteers,UNHCR ,UN,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Wal-Mark Africa Safaris,Protection ,Community Health,For both Refugees and Host community,3296,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,KIKAAYA,2016,March,2021,May
+127,Village Hope International,ACF,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Wal-Mark Africa Safaris,WASH,Disease Control,For Refugees only,2957,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,BWAISE III,2003,May ,2016,July 
+128,MACERUDET Uganda Volunteers,ARC,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Wal-Mark Africa Safaris,Health ,Guidance and Counselling,For Refugees only,4860,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,KABOWA,2016,March,2018,April
+129,Kibuku Community Centre,DCA,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Wal-Mark Africa Safaris,Education,HIV/AIDS,For Refugee Host community,2935,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,BUKASA,2016,March,2018,April
+130,Kitega Community Centre,MoH,Government ,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Wal-Mark Africa Safaris,Health ,Immunization,For Refugees only,217,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,BUKESA,2016,March,2021,May
+131,Wal-Mark Africa Safaris,UNHCR ,UN,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",Wal-Mark Africa Safaris,Protection ,BTVET,For both Refugees and Host community,3268,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,KISENYI II,2016,March,2021,May
+132,RWEYOWA,ACF,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",RWEYOWA,WASH,Community Health,For Refugees only,2470,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,NAGURU II,2003,May ,2016,July 
+133,Divine Children Orphanage Home,ARC,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",RWEYOWA,Health ,Disease Control,For Refugees only,1737,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,KAMWOKYA I,2016,March,2018,April
+134,Uplift A Child Africa,DCA,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",RWEYOWA,Education,Guidance and Counselling,For Refugee Host community,58,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,KOLOLO I,2016,March,2018,April
+135,BUVAD,MoH,Government ,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",RWEYOWA,Health ,BTVET,For Refugees only,2905,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,MBUYA I,2016,March,2021,May
+136,uganda womens network(UWONET),UNHCR ,UN,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",RWEYOWA,Protection ,Community Health,For both Refugees and Host community,551,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,LUBAGA,2016,March,2021,May
+137,Caritas Kampala,ACF,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",RWEYOWA,WASH,Disease Control,For Refugees only,3019,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,MULAGO III,2003,May ,2016,July 
+138,SNV,ARC,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",RWEYOWA,Health ,Guidance and Counselling,For Refugees only,223,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,BUTABIKA,2016,March,2018,April
+139,Community intergrated development initiatives,DCA,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",RWEYOWA,Education,HIV/AIDS,For Refugee Host community,4994,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,NAJJANANKUMBI II,2016,March,2018,April
+140,somero uganda,MoH,Government ,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",RWEYOWA,Health ,Immunization,For Refugees only,384,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,NAKASERO III,2016,March,2021,May
+141,NUHA foundation,UNHCR ,UN,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",RWEYOWA,Protection ,Maternal and Child Health,For both Refugees and Host community,4447,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,LUBYA,2016,March,2021,May
+142,Girl Child Network Uganda,ACF,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",RWEYOWA,WASH,Mental Health,For Refugees only,587,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,NAKAWA,2003,May ,2016,July 
+143,HEPS-Uganda,ARC,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",RWEYOWA,Health ,Palliative Care,For Refugees only,260,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,LUNGUJJA,2016,March,2018,April
+144,Water For People,DCA,NGO/CSO,"Plot 3177 Kampala
+Kiwafu Crescent, Kansanga
+Kampala",RWEYOWA,Education,Special Needs and Inclusive Education,For Refugee Host community,1269,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ",Rubaga,KISUGU,2016,March,2018,April
+145,,,,,,,,,,,,,,,,
+146,,,,,,,,,,,,,,,,
+147,,,,,,,,,,,,,,,,
+148,,,,,,,,,,,,,,,,
+149,,,,,,,,,,,,,,,,
+150,,,,,,,,,,,,,,,,
+151,,,,,,,,,,,,,,,,
+152,,,,,,,,,,,,,,,,
+153,,,,,,,,,,,,,,,,
+154,,,,,,,,,,,,,,,,
+155,,,,,,,,,,,,,,,,
+156,,,,,,,,,,,,,,,,
+157,,,,,,,,,,,,,,,,
+158,,,,,,,,,,,,,,,,
+159,,,,,,,,,,,,,,,,
+160,,,,,,,,,,,,,,,,
+161,,,,,,,,,,,,,,,,
+162,,,,,,,,,,,,,,,,
+163,,,,,,,,,,,,,,,,
+164,,,,,,,,,,,,,,,,
+165,,,,,,,,,,,,,,,,
+166,,,,,,,,,,,,,,,,
+167,,,,,,,,,,,,,,,,
+168,,,,,,,,,,,,,,,,
+169,,,,,,,,,,,,,,,,
+170,,,,,,,,,,,,,,,,
+171,,,,,,,,,,,,,,,,
+172,,,,,,,,,,,,,,,,
+173,,,,,,,,,,,,,,,,
+174,,,,,,,,,,,,,,,,
+175,,,,,,,,,,,,,,,,
+176,,,,,,,,,,,,,,,,
+177,,,,,,,,,,,,,,,,
+178,,,,,,,,,,,,,,,,
+179,,,,,,,,,,,,,,,,
+180,,,,,,,,,,,,,,,,
+181,,,,,,,,,,,,,,,,
+182,,,,,,,,,,,,,,,,
+183,,,,,,,,,,,,,,,,
+184,,,,,,,,,,,,,,,,
+185,,,,,,,,,,,,,,,,
+186,,,,,,,,,,,,,,,,
+187,,,,,,,,,,,,,,,,
+188,,,,,,,,,,,,,,,,
+189,,,,,,,,,,,,,,,,
+190,,,,,,,,,,,,,,,,
+191,,,,,,,,,,,,,,,,
+192,,,,,,,,,,,,,,,,
+193,,,,,,,,,,,,,,,,
+194,,,,,,,,,,,,,,,,
+195,,,,,,,,,,,,,,,,
+196,,,,,,,,,,,,,,,,
+197,,,,,,,,,,,,,,,,
+198,,,,,,,,,,,,,,,,
+199,,,,,,,,,,,,,,,,
