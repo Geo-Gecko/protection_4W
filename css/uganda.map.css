@@ -363,6 +363,10 @@ span.colorbox.four {
     left: 270px;
 }
 
+#logoContainer {
+    left: -270px;
+}
+
 /*
 $c-highlight: skyblue;
 

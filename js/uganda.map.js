@@ -235,7 +235,7 @@
 		});
 		var _3w_attrib = 'Created by <a href="http://www.geogecko.com">Geo Gecko</a> and © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, Powered by <a href="https://d3js.org/">d3</a>';
 		var basemap = L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_nolabels/{z}/{x}/{y}{r}.png', {
-			attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
+			attribution: 'Powered by &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a><br><a href="https://www.kcca.go.ug/" target="_blank"><img style="right: 0; width: 6em;" src="data/kcca_logo.svg" alt="KCCA"></a><a href="https://www.unicef.org/uganda/" target="_blank"><img style="right: 0; width: 10em;" src="data/unicef_for-every-child_EN.png" alt="UNICEF"></a>',
 			subdomains: 'abcd',
 			maxZoom: 19
 		});
@@ -379,15 +379,19 @@
 					}
 				});
 			})
-				.on("mouseover", function (d) {
-				d3.select(this).style("fill", "#aaa");
-			})
-				.on("mouseout", function (d) {
-				d3.select(this).style("fill", d.properties._agencyList ? color(d.properties._agencyList.length) :
-									  "#00000000");
-				tooltip.classed("d3-hide", true);
-			})
+//				.on("mouseover", function (d) {
+//				d3.select(this).style("fill", "#aaa");
+//			})
+//				.on("mouseout", function (d) {
+//				console.log(d);
+//				d3.select(this).style("fill", d.properties._agencyList ? color(d.properties._agencyList.length) :
+//									  "#00000000");
+//				tooltip.classed("d3-hide", true);
+//			})
 				.on("click", function (d) {
+				if(!sidebar.isVisible()) {
+						sidebar.toggle();
+					}
 				var svg = d3.select(this.parentNode.parentNode.parentNode);
 				var mouse = d3.mouse(svg.node()).map(function (d) {
 					return parseInt(d);
@@ -412,8 +416,8 @@
 						i++
 					}
 
-					str = str + "<table style='width:100%'><tr><th>Sectors:</th> <th>" + d.properties._sectorList.length + "</th></tr>" +
-						"<tr><th>Partners:</th> <th>" + d.properties._agencyList.length + "</th></tr><th><br/></th><div><tr> <th style='text-align: right;'>" + tooltipList + "</th></tr></table></div>";
+					str = str + "<br><br><tr><th>Sectors:</th> <th><b>" + d.properties._sectorList.length + "</b></th></tr>" +
+						"<br><br><tr><th>Partners:</th> <th><b>" + d.properties._agencyList.length + "</b></th></tr><th><br/></th><div><tr> <th style='text-align: right;'>" + tooltipList + "</th></tr></div>";
 					//console.log(d.properties._agencyList);
 				}
 				tooltip.html(str);
@@ -426,8 +430,7 @@
 				tooltip
 					.classed("d3-hide", false)
 					.attr("style", "left:" + (mouse[0] + 15) + "px;top:" + (mouse[1] < height / 2 ? mouse[1] : mouse[
-					1] -
-																			box.height) + "px; min-width: 200px; max-width: 200px; height: 150px; overflow-y: scroll;");
+					1] - box.height) + "px; min-width: 200px; max-width: 400px; max-height: 300px; overflow-y: auto;");
 				tooltip
 					.on("mouseover", function () {
 					tooltip.classed("d3-hide", false);
@@ -701,9 +704,7 @@
 			}).slice(0,5);
 			updateTable(top5Values);
 
-			beneficiaries = d3.sum(selectedDataset, function(d){console.log(d); return parseFloat(d.Beneficiaries)});
-
-			console.log(beneficiaries);
+			beneficiaries = d3.sum(selectedDataset, function(d){return parseFloat(d.Beneficiaries)});
 
 			d3.select("#beneficiary-count").text(beneficiaries);
 
@@ -854,6 +855,9 @@
 					return d.Parish;
 				})
 					.on("click", function (c) {
+					if(!sidebar.isVisible()) {
+						sidebar.toggle();
+					}
 					d3.selectAll(".labels").style("opacity", opacity);
 					var needRemove = $(d3.select(this).node()).hasClass("d3-active"); //d3.select(this).attr("class");//d3-active
 					d3.select(this).classed("d3-active", !needRemove).style("background", needRemove ? "transparent" : "#1fabe1");
@@ -890,6 +894,9 @@
 				})
 				// .style("background", "transparent")
 					.on("click", function (c) {
+					if(!sidebar.isVisible()) {
+						sidebar.toggle();
+					}
 					// d3.select(this.parentNode).selectAll("p").style("background", "transparent");
 					// d3.select(this).style("background", "#8cc4d3");
 					var needRemove = $(d3.select(this).node()).hasClass("d3-active"); //d3.select(this).attr("class");//d3-active
@@ -920,6 +927,9 @@
 				})
 				// .style("background", "transparent")
 					.on("click", function (c) {
+					if(!sidebar.isVisible()) {
+						sidebar.toggle();
+					}
 					var needRemove = $(d3.select(this).node()).hasClass("d3-active"); //d3.select(this).attr("class");//d3-active
 					d3.select(this).classed("d3-active", !needRemove).style("background", needRemove ? "transparent" : "#1fabe1");
 					// myFilterByAgency(c, needRemove);
@@ -944,6 +954,9 @@
 				})
 				// .style("background", "transparent")
 					.on("click", function (c) {
+					if(!sidebar.isVisible()) {
+						sidebar.toggle();
+					}
 					var needRemove = $(d3.select(this).node()).hasClass("d3-active"); //d3.select(this).attr("class");//d3-active
 					d3.select(this).classed("d3-active", !needRemove).style("background", needRemove ? "transparent" :
 																			"#1fabe1");
@@ -969,6 +982,9 @@
 				})
 				// .style("background", "transparent")
 					.on("click", function (c) {
+					if(!sidebar.isVisible()) {
+						sidebar.toggle();
+					}
 					var needRemove = $(d3.select(this).node()).hasClass("d3-active"); //d3.select(this).attr("class");//d3-active
 					d3.select(this).classed("d3-active", !needRemove).style("background", needRemove ? "transparent" :
 																			"#1fabe1");
@@ -988,6 +1004,9 @@
 
 			d3.select("#agency-list").selectAll("p").append("i")
 				.html("<i class=\"glyphicon glyphicon-info-sign\"></i>").on("click", function(d){
+				if(!sidebar.isVisible()) {
+						sidebar.toggle();
+					}
 				d3.select("#agency-name").select("span")
 					.remove();
 				d3.select("#agency-description").select("span")
