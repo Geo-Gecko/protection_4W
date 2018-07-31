@@ -363,8 +363,8 @@ span.colorbox.four {
     left: 270px;
 }
 
-#logoContainer {
-    left: -270px;
+.legend-text {
+    color: white;
 }
 
 /*

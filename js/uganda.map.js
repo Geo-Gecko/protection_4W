@@ -69,14 +69,30 @@
 	function addLegend(domain, color) {
 
 		d3.select("#legend").select("svg").remove();
-		var N = 4;
+		var N;
+		if ((domain[1] - domain[0]) < 4 ) {
+			N = (domain[1] - domain[0]) + 1;
+		}
+		else N = 4;
 		var step = Math.round((domain[1] - domain[0]) / N);
 		var array = [domain[0] + Math.round(step - step / 2), domain[0] + Math.round(step * 2 - step / 2), domain[0] + Math.round(step * 3 - step / 2), domain[0] + Math.round(step * 4 - step / 2)];
 		var arrayLabel = [domain[0].toString() + " - " + (domain[0] + step).toString(), (domain[0] + step + 1).toString() + " - " + (domain[0] + step * 2).toString(), (domain[0] + step * 2 + 1).toString() + " - " + (domain[0] + step * 3).toString(), (domain[0] + step * 3 + 1).toString() + " - " + domain[1].toString()];
+		
+		console.log(N)
+		
+		console.log(array)
+		console.log(arrayLabel)
+		
+		array = array.slice(0,N);
+		arrayLabel = arrayLabel.slice(0,N);
+		
+		console.log(array)
+		console.log(arrayLabel)
 
 		var legend = d3.selectAll('.c3-legend-item');
 		var legendSvg = d3.select('#legend')
 		.append('svg')
+		.attr('class', 'head')
 		.attr('width', 150)
 		.attr('height', 150);
 		legend.each(function () {
@@ -108,12 +124,14 @@
 			.enter()
 			.append('text')
 			.attr('class', 'legend-text')
+			.style('color', 'white')
 			.attr("x", legendX + 25)
 			.attr("y", function (d, i) {
 			return (i) * legendDY + 25;
 		})
 			.attr("dy", "0.8em") //place text one line *below* the x,y point
 			.text(function (d, i) {
+//			console.log(i);
 			return arrayLabel[i];
 		});
 
@@ -234,8 +252,8 @@
 			zoomControl: false
 		});
 		var _3w_attrib = 'Created by <a href="http://www.geogecko.com">Geo Gecko</a> and © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, Powered by <a href="https://d3js.org/">d3</a>';
-		var basemap = L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_nolabels/{z}/{x}/{y}{r}.png', {
-			attribution: 'Powered by &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a><br><a href="https://www.kcca.go.ug/" target="_blank"><img style="right: 0; width: 6em;" src="data/kcca_logo.svg" alt="KCCA"></a><a href="https://www.unicef.org/uganda/" target="_blank"><img style="right: 0; width: 10em;" src="data/unicef_for-every-child_EN.png" alt="UNICEF"></a>',
+		var basemap = L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_nolabels/{z}/{x}/{y}{r}.png', {
+			attribution: 'Powered by: <br> &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a><br><a href="https://www.kcca.go.ug/" target="_blank"><img style="right: 0; width: 6em;" src="data/kcca_logo.svg" alt="KCCA"></a>&nbsp&nbsp<a href="https://www.unicef.org/uganda/" target="_blank"><img style="right: 0; width: auto" src="data/unicef_for-every-child_EN.png" alt="UNICEF"></a>',
 			subdomains: 'abcd',
 			maxZoom: 19
 		});
@@ -284,12 +302,13 @@
 			var sortAscending = true;
 			var table = d3.select('#page-wrap').append('table');
 			var titles = d3.keys(data[0]);
+			var titlesText = ["Parish Name", "Number of agencies"]
 			var headers = table.append('thead').append('tr')
 			.selectAll('th')
-			.data(titles).enter()
+			.data(titlesText).enter()
 			.append('th')
 			.text(function (d) {
-				return d;
+					return d
 			})
 			.on('click', function (d) {
 				headers.attr('class', 'header');
@@ -348,7 +367,7 @@
 				.attr("z-index", "600")
 				.attr("style", "pointer-events:all!important")
 				.style("cursor", "pointer")
-				.style("stroke", "#000")
+				.style("stroke", "#fff")
 				.each(function (d) {
 				d.properties.centroid = projection(d3.geo.centroid(d));
 				datasetNest.map(function (c) {
@@ -397,7 +416,7 @@
 					return parseInt(d);
 				});
 				var str = "<tr><button type='button' class='close' onclick='$(this).parent().hide();'>×</button></tr>" +
-					"<th><br/></th><tr><th>Parish:</th> <th style='right: 0;'>" + d.properties.DNAME_06 + "</th></tr>"
+					"<th><br/></th><tr><th>Parish:</th> <th style='right: 0;'><b>" + d.properties.DNAME_06 + "</b></th></tr>"
 				if (d.properties._sectorList && d.properties._agencyList) {
 
 					//console.log(d.properties._agencyList);
@@ -416,8 +435,8 @@
 						i++
 					}
 
-					str = str + "<br><br><tr><th>Sectors:</th> <th><b>" + d.properties._sectorList.length + "</b></th></tr>" +
-						"<br><br><tr><th>Partners:</th> <th><b>" + d.properties._agencyList.length + "</b></th></tr><th><br/></th><div><tr> <th style='text-align: right;'>" + tooltipList + "</th></tr></div>";
+					str = str + "<br><tr><th>Sectors:</th> <th><b>" + d.properties._sectorList.length + "</b></th></tr>" +
+						"<br><br>Programs:<br><br><tr><th>HIV:</th> <th><b>" + d.properties._agencyList.length + "</b></th></tr><th><br/></th><div><tr> <th style='text-align: right;'>" + tooltipList + "</th></tr></div>";
 					//console.log(d.properties._agencyList);
 				}
 				tooltip.html(str);
@@ -544,7 +563,7 @@
 				return "#00000000";
 			});
 			addLegend(domain, color);
-
+			console.log(datasetNest);
 			var top5Values = datasetNest.sort(function(a,b){
 				return b.values.length - a.values.length
 			}).slice(1,6);
@@ -623,7 +642,6 @@
 				var isSector = false;
 				if (global.selectedSector.length > 0) {
 					global.selectedSector.map(function (c) {
-						console.log(d);
 						if (c.values[0].Activity === d.Sector) {
 							isSector = true;
 						}
@@ -695,8 +713,8 @@
 			addLegend(domain, color);
 
 			var selectedDatasetNest = d3.nest()
-			.key(function(d){ if(d.key !== ""){ 
-				return d["Agency name"]; 
+			.key(function(d){if(d.Parish !== ""){ 
+				return d.Parish; 
 			}}).entries(selectedDataset);
 
 			var top5Values = selectedDatasetNest.sort(function(a,b){
