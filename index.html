@@ -40,23 +40,32 @@ crossorigin=""></script>
 			#page-wrap {
 				margin: 50px;
 			}
+			/*
 			p {
-				margin: 20px 0; 
+			margin: 20px 0; 
 			}
+			*/
 
 			/* 
 			Generic Styling, for Desktops/Laptops 
 			*/
 			table { 
-				width: 100%; 
-				border-collapse: collapse; 
+				width: 100%;
+			}
+			thead tr {
+				border: 2px solid #13988E;
+
+			}
+			tbody {
+				border-bottom-left-radius: 10px;
 			}
 			/* Zebra striping */
-			tr:nth-of-type(odd) { 
-				background: #eee; 
+			/*			tr:nth-of-type(odd) { */
+			tr { 
+				border: 3px solid #172031;
 			}
 			th { 
-				background: #333; 
+				background: #13988e; 
 				color: white; 
 				font-weight: bold; 
 				cursor: s-resize;
@@ -65,8 +74,12 @@ crossorigin=""></script>
 			}
 			td, th { 
 				padding: 6px; 
-				border: 1px solid #ccc; 
+				border: 1px solid #ccc;
 				text-align: left; 
+			}
+			td {
+				text-decoration: underline;
+				text-decoration-color: #13988E;
 			}
 
 			th.des:after {
@@ -88,7 +101,8 @@ crossorigin=""></script>
 
 					/* Force table to not be like tables anymore */
 					table, thead, tbody, th, td, tr { 
-						display: block; 
+						display: block;
+						border-radius: 5px;
 					}
 
 					/* Hide table headers (but not display: none;, for accessibility) */
@@ -98,7 +112,7 @@ crossorigin=""></script>
 						left: -9999px;
 					}
 
-					tr { border: 1px solid #ccc; }
+					tr { border: 3px solid #172031; }
 
 					td { 
 						/* Behave  like a "row" */
@@ -152,31 +166,49 @@ crossorigin=""></script>
 	</head>
 
 	<body>
-		
+
+		<!-- The Modal -->
+		<div id="myModal" class="modal">
+
+			<!-- Modal content -->
+			<div class="modal-content">
+				<div class="modal-header">
+					<span class="close">&times;</span>
+					<p id="modal-header" class="custom-count-header" style="font-size: 16px;">Modal Header</p>
+				</div>
+				<table id="modal-body" class="modal-body">
+				</table>
+			</div>
+
+		</div>
+
+
+
+		<!-- The SidePanel -->
 		<div id="sidebar" style="overflow-x: hidden">
 			<div class="top-panel col-md-8 col-sm-8">
 
 
 				<div class="head col-md-2 col-sm-2">
-					<p class="custom-count-header" style="height:63.2px; font-size: 16px;"><br>Agencies </p>
+					<p class="custom-count-header" style="font-size: 16px;"><br>Agencies </p>
 					<p id="agency-count" class="custom-count">0</p>
 				</div>
 				<div class=" head col-md-2 col-sm-2">
-					<p class="custom-count-header" style="height:63.2px; font-size: 16px; overflow-y: auto;"><br>Sectors </p>
+					<p class="custom-count-header" style="font-size: 16px;"><br>Sectors </p>
 					<p id="sector-count" class="custom-count">0</p>
 				</div>
 				<div class="head col-md-2 col-sm-2">
-					<p class="custom-count-header" style="height:63.2px;  font-size: 16px;ithub"><br>Parishes </p>
+					<p class="custom-count-header" style="font-size: 16px;"><br>Parishes </p>
 					<p id="district-count" class="custom-count">0</p>
 				</div>
 				<div class="head col-md-2 col-sm-2">
-					<p class="custom-count-header" style="height:63.2px;  font-size: 16px;ithub"><br>Beneficiaries </p>
+					<p class="custom-count-header" style="font-size: 16px;"><br>Beneficiaries </p>
 					<p id="beneficiary-count" class="custom-count">0</p>
 				</div>
 
 
 			</div><br><br><br><br>			
-			<div id="page-wrap">
+			<div id="page-wrap" class="custom-list" style="height: 40vh !important;">
 
 				<p>Click the table header to sort data according to that column</p>
 
@@ -196,13 +228,6 @@ crossorigin=""></script>
 			</div>
 		</div>
 		<div class="main-container">
-
-			<div class="top-panel col-md-8 col-sm-8" style="top: 10px; left: 250px;">
-				<div class="head" style="width: 200px; height: 90px;">
-					<p id="d3-map-info">To Filter: Use Left Menu <br/>
-						For Info: Click Map Feature </p>
-				</div>
-			</div>
 		</div>
 		<div class="row" style="margin:0px;">
 			<!--<div class="bottom-panel col-md-12" style="padding: 0 5px;">  <span class="glyphicon glyphicon-menu-down"></span>-->
@@ -215,31 +240,34 @@ crossorigin=""></script>
 								<div id="header-text">
 									<p><span>Who does,</span><br>
 										<span>What,</span><br>
-										<span>Where (3W)</span></p>
+										<span>Where,</span><br>
+										<span>When</span></p>
 								</div>
 							</div>
+
 						</div>
+						<p id="d3-map-refresh">Reset Filters <i class="glyphicon glyphicon-refresh"></i></p>
 
 					</div>
 					<div class="list-container">
 						<div class="col-md-12">
-							<p class="custom-list-header">Partners <i class="glyphicon glyphicon-chevron-down"></i></p>
+							<p class="custom-list-header">Partners <i class="glyphicon glyphicon-chevron-down"></i><span class="count">&nbsp;</span><span id="partner-header-total" class="count">0</span><span class="count">/</span><span id="partner-list-count" class="count">0</span></p>
 							<div id="agency-list" class="custom-list"></div>
 						</div>
 						<div class="col-md-12">
-							<p class="custom-list-header">Sectors <i class="glyphicon glyphicon-chevron-down"></i></p>
+							<p class="custom-list-header">Sectors <i class="glyphicon glyphicon-chevron-down"></i><span class="count">&nbsp;</span><span id="sector-header-total" class="count">0</span><span class="count">/</span><span id="sector-list-count" class="count">0</span></p>
 							<div id="sector-list" class="custom-list"></div>
 						</div>
 						<div class="col-md-12">
-							<p class="custom-list-header">Parishes<i class="glyphicon glyphicon-chevron-down"></i></p>
+							<p class="custom-list-header">Parishes<i class="glyphicon glyphicon-chevron-down"></i><span class="count">&nbsp;</span><span id="parish-header-total" class="count">0</span><span class="count">/</span><span id="parish-list-count" class="count">0</span></p>
 							<div id="district-list" class="custom-list"></div>
 						</div>
 						<div class="col-md-12">
-							<p class="custom-list-header">Donors<i class="glyphicon glyphicon-chevron-down"></i></p>
+							<p class="custom-list-header">Donors<i class="glyphicon glyphicon-chevron-down"></i><span class="count">&nbsp;</span><span id="donor-header-total" class="count">0</span><span class="count">/</span><span id="donor-list-count" class="count">0</span></p>
 							<div id="donor-list" class="custom-list"></div>
 						</div>
 						<div class="col-md-12">
-							<p class="custom-list-header">Actor Type<i class="glyphicon glyphicon-chevron-down"></i></p>
+							<p class="custom-list-header">Actor Type<i class="glyphicon glyphicon-chevron-down"></i><span class="count">&nbsp;</span><span id="actor-type-header-total" class="count">0</span><span class="count">/</span><span id="actor-type-list-count" class="count">0</span></p>
 							<div id="actor-type-list" class="custom-list"></div>
 						</div>
 					</div>
@@ -250,8 +278,6 @@ crossorigin=""></script>
 		<div class="right-panel col-md-12 col-sm-12">
 			<div id="d3-map-container">
 				<div style="background:#f5f5f5; position:absolute; top:0px; width:100%;">
-					<p id="d3-map-refresh">Reset Filters</p>
-					<div id="legend"></div>
 					<a href="https://www.geogecko.com/" target="_blank"><img style="z-index: 10000; left: 270px; position: fixed; bottom: 2%; border: 0; width: 10em;" src="data/logo-full-no-text.svg" alt="GeoGecko"></a>
 				</div>
 				<div id="d3-map-wrapper"></div>

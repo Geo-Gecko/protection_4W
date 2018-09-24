@@ -37,8 +37,11 @@
 	global.selectedDonor = []; // Type Donor
 	global.selectedActorType = []; // Type Actor
 	global.districtCount;
+	global.parishCount;
 	global.sectorCount;
 	global.agencyCount;
+	global.donorCount;
+	global.actorTypeCount;
 	global.beneficiaryCount;
 	global.unCount;
 	global.ipCount;
@@ -66,89 +69,6 @@
 		_selectedDataset = dataset;
 	}
 
-	function addLegend(domain, color) {
-
-		d3.select("#legend").select("svg").remove();
-		var N;
-		if ((domain[1] - domain[0]) < 4 ) {
-			N = (domain[1] - domain[0]) + 1;
-		}
-		else N = 4;
-		var step = Math.round((domain[1] - domain[0]) / N);
-		var array = [domain[0] + Math.round(step - step / 2), domain[0] + Math.round(step * 2 - step / 2), domain[0] + Math.round(step * 3 - step / 2), domain[0] + Math.round(step * 4 - step / 2)];
-		var arrayLabel = [domain[0].toString() + " - " + (domain[0] + step).toString(), (domain[0] + step + 1).toString() + " - " + (domain[0] + step * 2).toString(), (domain[0] + step * 2 + 1).toString() + " - " + (domain[0] + step * 3).toString(), (domain[0] + step * 3 + 1).toString() + " - " + domain[1].toString()];
-		
-		console.log(N)
-		
-		console.log(array)
-		console.log(arrayLabel)
-		
-		array = array.slice(0,N);
-		arrayLabel = arrayLabel.slice(0,N);
-		
-		console.log(array)
-		console.log(arrayLabel)
-
-		var legend = d3.selectAll('.c3-legend-item');
-		var legendSvg = d3.select('#legend')
-		.append('svg')
-		.attr('class', 'head')
-		.attr('width', 150)
-		.attr('height', 150);
-		legend.each(function () {
-			svg.node().appendChild(this);
-		});
-
-		var legendX = 0;
-		var legendDY = 20;
-		legendSvg.selectAll('.legend-rect')
-			.data(array)
-			.enter()
-			.append('rect')
-			.attr('class', 'legend-rect')
-			.attr("x", legendX)
-			.attr("y", function (d, i) {
-			return (i + 1) * legendDY;
-		})
-			.attr("width", 20)
-			.attr("height", 20)
-			.style("stroke", "black")
-			.style("stroke-width", 0)
-			.style("fill", function (d) {
-			return color(d);
-		});
-		//the data objects are the fill colors
-
-		legendSvg.selectAll('.legend-text')
-			.data(array)
-			.enter()
-			.append('text')
-			.attr('class', 'legend-text')
-			.style('color', 'white')
-			.attr("x", legendX + 25)
-			.attr("y", function (d, i) {
-			return (i) * legendDY + 25;
-		})
-			.attr("dy", "0.8em") //place text one line *below* the x,y point
-			.text(function (d, i) {
-//			console.log(i);
-			return arrayLabel[i];
-		});
-
-		legendSvg.selectAll('.legend-title')
-			.data(["Number of Agencies"])
-			.enter()
-			.append('text')
-			.attr('class', 'legend-title')
-			.attr("x", legendX)
-			.attr("y", 0)
-			.attr("dy", "0.8em") //place text one line *below* the x,y point
-			.text(function (d, i) {
-			return d;
-		});
-
-	}
-
 	function ready(error, ugandaGeoJson, sector, relationship) {
 		//standard for if data is missing, the map shouldnt start.
 		if (error) {
@@ -157,6 +77,7 @@
 		ugandaGeoJson.features.map(function (d) {
 			d.properties.DNAME_06 = d.properties.dist;
 		});
+
 
 		$(".custom-list-header").click(function () {
 			$(".custom-list-header").siblings(".custom-list").addClass('collapsed');
@@ -222,12 +143,39 @@
 
 		var beneficiaries = d3.sum(relationship, function(d){return parseFloat(d.Beneficiaries)});
 
+		// Get the modal
+		var modal = document.getElementById('myModal');
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+			modal.style.display = "none";
+		}
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+			if (event.target == modal) {
+				modal.style.display = "none";
+			}
+		}
+
 
 
 		global.districtCount = districtList.length;
+		global.parishCount = ugandaGeoJson.features.length;
 		global.sectorCount = sectorList.length;
-		global.agencyCount = agencyList.length; //to remove the count of NO DATA
+		global.agencyCount = agencyList.length;
+		global.donorCount = donorList.length;
+		global.actorTypeCount = actorTypeList.length;
 		global.beneficiaryCount = beneficiaries;
+
+		d3.select("#partner-header-total").text(global.agencyCount);
+		d3.select("#sector-header-total").text(global.sectorCount);
+		d3.select("#parish-header-total").text(global.parishCount);
+		d3.select("#donor-header-total").text(global.donorCount);
+		d3.select("#actor-type-header-total").text(global.actorTypeCount);
 
 		refreshCounts();
 		updateLeftPanel(districtList, sectorList, agencyList, donorList, actorTypeList, dataset);
@@ -252,8 +200,8 @@
 			zoomControl: false
 		});
 		var _3w_attrib = 'Created by <a href="http://www.geogecko.com">Geo Gecko</a> and © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, Powered by <a href="https://d3js.org/">d3</a>';
-		var basemap = L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_nolabels/{z}/{x}/{y}{r}.png', {
-			attribution: 'Powered by: <br> &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a><br><a href="https://www.kcca.go.ug/" target="_blank"><img style="right: 0; width: 6em;" src="data/kcca_logo.svg" alt="KCCA"></a>&nbsp&nbsp<a href="https://www.unicef.org/uganda/" target="_blank"><img style="right: 0; width: auto" src="data/unicef_for-every-child_EN.png" alt="UNICEF"></a>',
+		var basemap = L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_nolabels/{z}/{x}/{y}{r}.png', {
+			attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
 			subdomains: 'abcd',
 			maxZoom: 19
 		});
@@ -298,7 +246,6 @@
 		function updateTable(data) {
 
 			d3.select('#page-wrap').select('table').remove();
-
 			var sortAscending = true;
 			var table = d3.select('#page-wrap').append('table');
 			var titles = d3.keys(data[0]);
@@ -308,11 +255,11 @@
 			.data(titlesText).enter()
 			.append('th')
 			.text(function (d) {
-					return d
+				return d
 			})
 			.on('click', function (d) {
 				headers.attr('class', 'header');
-
+				console.log(d);
 				if (sortAscending) {
 					rows.sort(function(a, b) { return b[d] < a[d]; });
 					sortAscending = false;
@@ -324,7 +271,6 @@
 				}
 
 			});
-
 			var rows = table.append('tbody').selectAll('tr')
 			.data(data).enter()
 			.append('tr');
@@ -346,14 +292,37 @@
 			})
 				.text(function (d) {
 				return d.value;
+			}).on("click", function (d) {
+
+				if (d.name === "key") {
+					var parishDataFilter = districtList.filter(function (k) {
+						if (d.value === k.key) {
+							var str = "<thead><tr><th style='text-decoration: none !important; text-align: right;'>Agency Name</th> <th style='text-decoration: none !important; text-align: right;'>Project Title</th></tr></thead>";
+
+							var tooltipList = "";
+							var i = 0;
+							while (i < k.values.length) {
+								tooltipList = tooltipList + ("<tr><td style='text-decoration: none !important; text-align: right;'>" + k.values[i]["Agency name"] + "</td> <td style='text-decoration: none !important; text-align: right;'>" + k.values[i]["Detailed Activity description"] + "</td></tr>");
+								i++
+							}					
+							document.getElementById('modal-header').innerHTML = d.value;
+							document.getElementById('modal-body').innerHTML = str + tooltipList;
+							modal.style.display = "block";	
+						}
+					})
+					}	
+			})
+			.on("mouseover", function (d){
+				if(d.name === "key") {
+					d3.select(this).style("cursor", "pointer");
+				}
 			});
 		}
 
 		var top5Values = datasetNest.sort(function(a,b){
-			return b.values.length - a.values.length
-		}).slice(1,6);
+			return d3.ascending(a.key, b.key)
+		}).slice(1);
 		updateTable(top5Values);
-
 
 		var countries = [];
 		var countriesOverlay = L.d3SvgOverlay(function (sel, proj) {
@@ -367,7 +336,7 @@
 				.attr("z-index", "600")
 				.attr("style", "pointer-events:all!important")
 				.style("cursor", "pointer")
-				.style("stroke", "#fff")
+				.style("stroke", "#000")
 				.each(function (d) {
 				d.properties.centroid = projection(d3.geo.centroid(d));
 				datasetNest.map(function (c) {
@@ -398,30 +367,30 @@
 					}
 				});
 			})
-//				.on("mouseover", function (d) {
-//				d3.select(this).style("fill", "#aaa");
-//			})
-//				.on("mouseout", function (d) {
-//				console.log(d);
-//				d3.select(this).style("fill", d.properties._agencyList ? color(d.properties._agencyList.length) :
-//									  "#00000000");
-//				tooltip.classed("d3-hide", true);
-//			})
+			//				.on("mouseover", function (d) {
+			//				d3.select(this).style("fill", "#aaa");
+			//			})
+			//				.on("mouseout", function (d) {
+			//				console.log(d);
+			//				d3.select(this).style("fill", d.properties._agencyList ? color(d.properties._agencyList.length) :
+			//									  "#00000000");
+			//				tooltip.classed("d3-hide", true);
+			//			})
+
 				.on("click", function (d) {
 				if(!sidebar.isVisible()) {
-						sidebar.toggle();
-					}
+					sidebar.toggle();
+				}
 				var svg = d3.select(this.parentNode.parentNode.parentNode);
 				var mouse = d3.mouse(svg.node()).map(function (d) {
 					return parseInt(d);
 				});
 				var str = "<tr><button type='button' class='close' onclick='$(this).parent().hide();'>×</button></tr>" +
-					"<th><br/></th><tr><th>Parish:</th> <th style='right: 0;'><b>" + d.properties.DNAME_06 + "</b></th></tr>"
+					"<th><br/></th><tr><th>Parish:</th> <th style='right: 0;'><b>" + d.properties.DNAME_06 + "</b></th></tr>";
 				if (d.properties._sectorList && d.properties._agencyList) {
 
 					//console.log(d.properties._agencyList);
 					var agencyListAbb = d3.values(d.properties._agencyList).map(function (d) {
-						console.log(d);
 						return d.values.map(function (v) {
 							return v.Abbreviation;
 						});
@@ -435,8 +404,9 @@
 						i++
 					}
 
-					str = str + "<br><tr><th>Sectors:</th> <th><b>" + d.properties._sectorList.length + "</b></th></tr>" +
-						"<br><br>Programs:<br><br><tr><th>HIV:</th> <th><b>" + d.properties._agencyList.length + "</b></th></tr><th><br/></th><div><tr> <th style='text-align: right;'>" + tooltipList + "</th></tr></div>";
+					str = str + "<br><tr><th>Number of Agencies:</th> <th><b>" + d.properties._agencyList.length + "</b></th></tr>" +
+						"<br><br>List of Agencies:<br><th><b>" + 
+						"</b></th></tr><th></th><div><tr> <th style='text-align: right;'>" + tooltipList + "</th></tr></div>";
 					//console.log(d.properties._agencyList);
 				}
 				tooltip.html(str);
@@ -508,11 +478,6 @@
 		countriesOverlay.addTo(map);
 
 
-		addLegend(domain, color);
-
-
-
-
 		function refreshMap() {
 			global.selectedDistrict = [];
 			ugandaPath.style("opacity", function (a) {
@@ -562,11 +527,9 @@
 				}
 				return "#00000000";
 			});
-			addLegend(domain, color);
-			console.log(datasetNest);
 			var top5Values = datasetNest.sort(function(a,b){
-				return b.values.length - a.values.length
-			}).slice(1,6);
+				return d3.ascending(a.key, b.key)
+			}).slice(1);
 			updateTable(top5Values);
 
 			var beneficiaries = d3.sum(relationship, function(d){return parseFloat(d.Beneficiaries)});
@@ -710,16 +673,14 @@
 				return d.properties._numberOfAgencies ? color(d.properties._numberOfAgencies) : "#00000000"; //#3CB371
 			});
 
-			addLegend(domain, color);
-
 			var selectedDatasetNest = d3.nest()
 			.key(function(d){if(d.Parish !== ""){ 
 				return d.Parish; 
 			}}).entries(selectedDataset);
 
 			var top5Values = selectedDatasetNest.sort(function(a,b){
-				return b.values.length - a.values.length
-			}).slice(0,5);
+				return d3.ascending(a.key, b.key)
+			});
 			updateTable(top5Values);
 
 			beneficiaries = d3.sum(selectedDataset, function(d){return parseFloat(d.Beneficiaries)});
@@ -810,19 +771,25 @@
 
 			if (flag === "district") {
 				d3.select("#district-count").text(global.selectedDistrict.length);
+				d3.select("#parish-list-count").text(global.selectedDistrict.length);
 			} else {
 				// global.selectedDistrict = districtList;
 				d3.select("#district-count").text(districtList.length);
+				//				d3.select("#parish-list-count").text(districtList.length);
 			}
 			if (flag === "sector") {
 				d3.select("#sector-count").text(global.selectedSector.length);
+				d3.select("#sector-list-count").text(global.selectedSector.length);
 			} else {
 				d3.select("#sector-count").text(sectorList.length);
+				//				d3.select("#sector-list-count").text(sectorList.length);
 			}
 			if (flag === "agency") {
 				d3.select("#agency-count").text(global.selectedAgency.length);
+				d3.select("#partner-list-count").text(global.selectedAgency.length);
 			} else {
 				d3.select("#agency-count").text(agencyList.length);
+				//				d3.select("#partner-list-count").text(agencyList.length);
 			}
 			if (flag === "unAgency") {
 				d3.select("#unAgency-count").text(global.selectedUn.length);
@@ -841,13 +808,17 @@
 			}
 			if (flag === "donor") {
 				d3.select("#donor-count").text(global.selectedDonor.length);
+				d3.select("#donor-list-count").text(global.selectedDonor.length);
 			} else {
 				d3.select("#donor-count").text(donorList.length);
+				//				d3.select("#donor-list-count").text(donorList.length);
 			}
 			if (flag === "actor-type") {
 				d3.select("#actor-type-count").text(global.selectedActorType.length);
+				d3.select("#actor-type-list-count").text(global.selectedActorType.length);
 			} else {
 				d3.select("#actor-type-count").text(actorTypeList.length);
+				//				d3.select("#actor-type-list-count").text(actorTypeList.length);
 			}
 
 
@@ -868,7 +839,7 @@
 				d3.select("#district-count").text(districtList.length);
 				var _districtList = d3.select("#district-list").selectAll("p")
 				.data(districtList);
-				_districtList.enter().append("p")
+				_districtList.enter().append("p")	
 					.text(function (d) {
 					return d.Parish;
 				})
@@ -878,7 +849,8 @@
 					}
 					d3.selectAll(".labels").style("opacity", opacity);
 					var needRemove = $(d3.select(this).node()).hasClass("d3-active"); //d3.select(this).attr("class");//d3-active
-					d3.select(this).classed("d3-active", !needRemove).style("background", needRemove ? "transparent" : "#1fabe1");
+					d3.select(this).classed("d3-active", !needRemove);
+					//					.style("background", needRemove ? "transparent" : "#1fabe1");
 					global.currentEvent = "district";
 					myFilter(c, global.currentEvent, needRemove);
 
@@ -901,6 +873,7 @@
 
 			if (sectorList) {
 				d3.select("#sector-count").text(sectorList.length);
+				d3.select("#sector-list-count").text(global.selectedSector.length);
 				var _sectorList = d3.select("#sector-list").selectAll("p")
 				.data(sectorList);
 				_sectorList.enter().append("p")
@@ -918,8 +891,8 @@
 					// d3.select(this.parentNode).selectAll("p").style("background", "transparent");
 					// d3.select(this).style("background", "#8cc4d3");
 					var needRemove = $(d3.select(this).node()).hasClass("d3-active"); //d3.select(this).attr("class");//d3-active
-					d3.select(this).classed("d3-active", !needRemove).style("background", needRemove ? "transparent" :
-																			"#1fabe1");
+					d3.select(this).classed("d3-active", !needRemove);
+					//					.style("background", needRemove ? "transparent" :"#1fabe1");
 					global.currentEvent = "sector";
 					myFilter(c, global.currentEvent, needRemove);
 					// myFilterBySector(c, needRemove);
@@ -937,47 +910,46 @@
 
 			if (agencyList) {
 				d3.select("#agency-count").text(agencyList.length);
+				d3.select("#partner-list-count").text(global.selectedAgency.length);
 				var _agencyList = d3.select("#agency-list").selectAll("p")
 				.data(agencyList);
 				_agencyList.enter().append("p")
-					.text(function (d) {
-					return d.key;
-				})
 				// .style("background", "transparent")
 					.on("click", function (c) {
 					if(!sidebar.isVisible()) {
 						sidebar.toggle();
 					}
 					var needRemove = $(d3.select(this).node()).hasClass("d3-active"); //d3.select(this).attr("class");//d3-active
-					d3.select(this).classed("d3-active", !needRemove).style("background", needRemove ? "transparent" : "#1fabe1");
+					d3.select(this).classed("d3-active", !needRemove);
+					//					.style("background", needRemove ? "transparent" : "#1fabe1");
 					// myFilterByAgency(c, needRemove);
 					global.currentEvent = "agency"
 					myFilter(c, global.currentEvent, needRemove);
 					if(global.selectedAgency.length === 0){refreshCounts();}
 				});
 				_agencyList
-					.text(function (d) {
-					return d.key;
-				});
+					.html(function(d) {
+					return "<a>" + d.key + "</a>"
+				})
 				_agencyList.exit().remove();
 			}
 
 			if (donorList) {
 				d3.select("#donor-count").text(donorList.length);
+				d3.select("#donor-list-count").text(global.selectedDonor.length);
 				var _donorList = d3.select("#donor-list").selectAll("p")
 				.data(donorList);
 				_donorList.enter().append("p")
 					.text(function (d) {
 					return d.key;
 				})
-				// .style("background", "transparent")
 					.on("click", function (c) {
 					if(!sidebar.isVisible()) {
 						sidebar.toggle();
 					}
 					var needRemove = $(d3.select(this).node()).hasClass("d3-active"); //d3.select(this).attr("class");//d3-active
-					d3.select(this).classed("d3-active", !needRemove).style("background", needRemove ? "transparent" :
-																			"#1fabe1");
+					d3.select(this).classed("d3-active", !needRemove);
+					//					.style("background", needRemove ? "transparent" :"#1fabe1");
 					// myFilterByAgency(c, needRemove);
 					global.currentEvent = "donor"
 					myFilter(c, global.currentEvent, needRemove);
@@ -992,6 +964,7 @@
 
 			if (actorTypeList) {
 				d3.select("#actor-type-count").text(actorTypeList.length);
+				d3.select("#actor-type-list-count").text(global.selectedActorType.length);
 				var _actorTypeList = d3.select("#actor-type-list").selectAll("p")
 				.data(actorTypeList);
 				_actorTypeList.enter().append("p")
@@ -1004,8 +977,8 @@
 						sidebar.toggle();
 					}
 					var needRemove = $(d3.select(this).node()).hasClass("d3-active"); //d3.select(this).attr("class");//d3-active
-					d3.select(this).classed("d3-active", !needRemove).style("background", needRemove ? "transparent" :
-																			"#1fabe1");
+					d3.select(this).classed("d3-active", !needRemove);
+					//						.style("background", needRemove ? "transparent" :"#1fabe1");
 					// myFilterByAgency(c, needRemove);
 					global.currentEvent = "actor-type"
 					myFilter(c, global.currentEvent, needRemove);
@@ -1018,13 +991,63 @@
 				_actorTypeList.exit().remove();
 			}
 
-			d3.select("#agency-list").selectAll("p").select("i").remove();
 
-			d3.select("#agency-list").selectAll("p").append("i")
-				.html("<i class=\"glyphicon glyphicon-info-sign\"></i>").on("click", function(d){
+
+			var partnerC = d3.select("#agency-list").selectAll("p.d3-active");
+			var sectorC = d3.select("#agency-list").selectAll("p.d3-active");
+			var parishC = d3.select("#agency-list").selectAll("p.d3-active");
+			var donorsC = d3.select("#agency-list").selectAll("p.d3-active");
+			var actorTypeC = d3.select("#agency-list").selectAll("p.d3-active");
+
+			d3.select("#partner-list-count").text(partnerC.length-1);
+			d3.select("#sector-list-count").text(sectorC.length-1);
+			d3.select("#parish-list-count").text(parishC.length-1);
+			d3.select("#donor-list-count").text(donorsC.length-1);
+			d3.select("#actor-type-list-count").text(actorTypeC.length-1);		
+
+			d3.selectAll(".custom-list").selectAll("p").select("svg").remove();
+			
+			var agencySpan = d3.select("#agency-list").selectAll("a");
+			agencySpan.on("click", function (d) {
+				console.log(d);
+				
+									var str = "<thead><tr><th style='text-decoration: none !important; text-align: right;'>Parish Name</th> <th style='text-decoration: none !important; text-align: right;'>Project Title</th></tr></thead>";
+				
+									var tooltipList = "";
+									var i = 0;
+									while (i < d.values.length) {
+										tooltipList = tooltipList + ("<tr><td style='text-decoration: none !important; text-align: right;'>" + d.values[i].Parish + "</td> <td style='text-decoration: none !important; text-align: right;'>" + d.values[i]["Detailed Activity description"] + "</td></tr>");
+										i++
+									}
+				
+				
+									//					console.log(d);
+				
+				
+				
+				
+									document.getElementById('modal-header').innerHTML = d.key;
+									document.getElementById('modal-body').innerHTML = str + tooltipList;
+									modal.style.display = "block";	
+								});
+
+			
+			console.log(agencySpan);
+			var checkboxSVG = d3.selectAll(".custom-list").selectAll("p").append("svg")
+			.attr("width", 15)
+			.attr("height", 15);
+
+			checkboxSVG.append("rect")
+				.attr("rx", 6)
+				.attr("ry", 6)
+				.attr("width", 15)
+				.attr("height", 15)
+				.style("fill", "none")
+				.on("click", function(d){
+				console.log(d);
 				if(!sidebar.isVisible()) {
-						sidebar.toggle();
-					}
+					sidebar.toggle();
+				}
 				d3.select("#agency-name").select("span")
 					.remove();
 				d3.select("#agency-description").select("span")
@@ -1037,6 +1060,9 @@
 				d3.select("#agency-description").append("span").text(newDescription);
 
 
+			})
+			.on("mouseover", function (d){
+				console.log(d);
 			});
 
 		}
@@ -1052,19 +1078,6 @@
 					.attr("height", height);
 			}
 		});
-
-		d3.select("#agency-name").select("span")
-			.transition()
-			.duration(50)
-			.text("Kampala Capital City Authority");
-
-		d3.select("#agency-description").select("span")
-			.transition()
-			.duration(50)
-			.text("Mission: To Deliver Quality Services to the City");
-
-
-
 	} // ready
 
 

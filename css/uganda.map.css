@@ -4,23 +4,23 @@ html {
 }
 
 #header-text p {
-    font-size: 28px;
+    font-size: 13px;
     font-weight: 700;
     color: #fff;
     display: inline-block;
-
     font-family: Roboto, sans-serif;
 
 }
 
 #header-text span {
-    background-color: #1fabe1;
+    background-color: #13988E;
     padding: 0 14px 0 8px;
-    margin: 0px 0 1px 0;
+    margin: 0px 0 10px 0;
+	border-radius: 10px;
 }
 
 #header-text {
-    line-height: 35px;
+    line-height: 17.5px;
 }
 
 .label {
@@ -72,7 +72,7 @@ html {
 
 p.custom-count-header {
     font-family: Roboto, sans-serif;
-    font-size: 14px;
+    font-size: 10px;
     font-weight: 700;
     line-height: 21px;
     color: #52595e;
@@ -83,19 +83,18 @@ p.custom-count {
     font-family: Roboto, sans-serif;
     font-size: 20px;
     font-weight: 300;
-    background-color: #1fabe1;
     line-height: 28px;
-    color: #ffffff;
+    color: #13988E;
     margin: 8px -4px -8px -4px;
     padding: 3px;
-    border-bottom-right-radius: 3px;
-    border-bottom-left-radius: 3px;
+	border-left: 3px solid #172031;
+	border-bottom: 3px solid #172031;
+	border-bottom-left-radius: 5px;
 }
 
 .head {
     padding: 8px 4px !important;
     text-align: center;
-    background-color: rgba(255, 255, 255, .9);
     margin: 0 5px;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
@@ -115,6 +114,8 @@ p.custom-count {
 
 .left-panel .col-md-12 {
     padding: 0;
+	width: 90%;
+	left: 5%;
 }
 
 .left-panel.col-md-2 {
@@ -134,15 +135,18 @@ p.custom-count {
 }
 
 #d3-map-refresh {
-    position: absolute;
-    top: 130px;
-    left: 270px;
+
+    position: relative;
+    left: 25% !important;
+
+	width: 50%;
     cursor: pointer;
     z-index: 9;
-    border-radius: 4px;
-    background: #FFF;
+    border-radius: 10px;
+    background: #13988E;
+	color: white;
     /* box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.24), 0 4px 8px 0 rgba(0, 0, 0, 0.16); */
-    padding: 5px 10px;
+    padding: 1px 15px;
     font-size: 13px;
     z-index: 500;
 }
@@ -207,27 +211,21 @@ div.d3-tooltip p {
 
 .custom-list-header {
     margin: 0;
-    padding: 7px 6px;
-    background-color: #fff;
+    padding: 2px 6px;
+    background: #F0F0EE;
     font-size: 16px;
-    color: #52595e;
+    color: #172031;
     font-weight: bold;
     font-style: normal;
     cursor: pointer;
     font-family: Roboto, sans-serif;
-    border-bottom: 1px solid #dfe9f1;
+	border-left: 3px solid #172031;
+	border-bottom: 3px solid #172031;
+	border-bottom-left-radius: 5px;
 }
-
-p.custom-list-header .glyphicon {
-    float: right;
-    padding: 3px 10px 0 0;
-    font-size: 13px;
-    color: #1fabe1;
-}
-
 .custom-list {
     text-align: left;
-    height: 55vh;
+    height: 25vh !important;
     margin: 0;
     padding: 0px;
     top: 20px;
@@ -235,10 +233,11 @@ p.custom-list-header .glyphicon {
     left: 20px;
     right: 20px;
     overflow-y: auto;
-    background-color: rgb(245, 245, 245);
+    background-color: #D4D4D4;
     color: #52595e;
     border-right: 1px solid #dfe9f1;
     border-left: 1px solid #dfe9f1;
+	border-radius: 10px;
 }
 
 .custom-list p {
@@ -247,9 +246,10 @@ p.custom-list-header .glyphicon {
     cursor: pointer;
 }
 
-.custom-list p:hover {
-    background: rgba(31, 171, 225, 0.12) !important;
-    color: #000 !important;
+.custom-list svg {
+    float: right;
+	border: 2px solid #172031;
+	border-radius: 5px;
 }
 
 .collapsed {
@@ -266,8 +266,9 @@ p.custom-list-header .glyphicon {
 .list-container {
     width: 100%;
     overflow-y: auto;
-    min-height: 480px;
-    height: 535px;
+    height: auto !important;
+	background: #F0F0EE;
+	border-radius: 10px;
 }
 
 .menu-panel.col-md-6.col-sm-6 {
@@ -461,13 +462,12 @@ body {
 ::-webkit-scrollbar-track
 {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-    border-radius: 10px;
     background-color: #F5F5F5;
 }
 
 ::-webkit-scrollbar
 {
-    width: 12px;
+    width: 6px;
     background-color: #F5F5F5;
 }
 
@@ -484,4 +484,115 @@ body {
  
 body.all-loaded {
 	opacity: 1;
+}
+
+.d3-active rect {
+	fill: #13988E !important;
+}
+.custom-list svg {
+	cursor: pointer !important;
+}
+
+#agency-list span:hover {
+	text-decoration: underline !important;
+	text-decoration-color: #13988E !important;
+}
+
+.count {
+	float: right;
+}
+
+p.custom-list-header .glyphicon {
+    float: right;
+    padding: 3px 10px 0 0;
+    font-size: 13px;
+    color: #13988E;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2001; /* Sit on top */
+    left: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+}
+
+/* Modal Content */
+.modal-content {
+    position: fixed;
+    top: 50%;
+    background-color: #fefefe;
+    width: 100%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #13988E;
+    color: white;
+}
+
+.modal-body {
+	padding: 2px 16px;
+	height: 10px !important;
+	overflow-y: auto;
+}
+.modal-content {
+	padding: 2px 16px;
+	height: 300px !important;
+	overflow-y: auto;
+}
+
+.modal-footer {
+/*    padding: 2px 3px;*/
+    background-color: #5cb85c;
+    color: white;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0} 
+    to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
 }
